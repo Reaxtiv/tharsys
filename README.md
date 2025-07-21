@@ -1,95 +1,76 @@
-# THARSYS
+<p align="center">
+  <img src="assets/logo.png" width="300" alt="Tharsys Logo" />
+</p>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/tu-usuario/tharsys/main/public/logo.png" alt="THARSYS Logo" width="200">
-</div>
+# Tharsys
 
-### AI Agent Orchestration Platform  
-*Build, deploy and manage autonomous AI systems at scale*
+**Tharsys** is a social simulation and AI-driven town set on a terraformed Mars in the distant future. Inspired by the colonization spirit of the old frontiers—but without Western symbolism—it explores the birth of a new civilization through interactive NPCs powered by AI.
 
----
+## 🌍 Concept
 
-## Overview  
-**THARSYS** is an open-source framework for creating stateful AI agent workflows with:  
+Welcome to **Nova Tharsys**, the first Martian colony to thrive as both an experiment in social behavior and an open-ended simulation game. New settlers arrive from Earth, building futuristic homes, vehicles, and systems, and writing the new history of humanity—one conversation at a time.
 
-- 🧩 **Modular Architecture** - Combine conversational, procedural, and specialized agents  
-- ⚡ **Real-time Execution** - Low-latency inference engine  
-- 📊 **Full Observability** - Built-in tracing, logging, and evaluation metrics  
+## 🎯 Key Features
 
-Inspired by [a16z/ai-getting-started](https://github.com/a16z/ai-getting-started).
+- 🧠 **AI-Driven NPCs**  
+  Fully autonomous agents with evolving personalities and memories powered by language models.
 
----
+- 🏙️ **Futuristic Mars City**  
+  A city built on Mars using clean, stylized visuals and futuristic architecture.
 
-## Quick Start
+- 🧪 **Social Experiment Meets Game**  
+  A hybrid experience that explores sociology, emergent storytelling, and player observation.
 
-### Prerequisites
-- Node.js 20+
-- Docker
-- Python 3.10+ (for some dependencies)
+- 🔁 **Real-Time Interaction**  
+  NPCs talk, make decisions, and develop social bonds 24/7, even when you're not around.
 
-```bash
-# Clone repository
-git clone https://github.com/tu-usuario/tharsys.git
-cd tharsys
+- 🔗 **Web3-Ready Architecture** *(coming soon)*  
+  Planned integration with NFTs, identity layers, and wallet interaction for ownership and persistence.
 
-# Install dependencies
+## 🚀 Getting Started
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/Reaxtiv/tharsys.git
+   cd tharsys
+Install dependencies:
+
+bash
+Copiar
+Editar
 npm install
-pip install -r requirements.txt
+Run locally:
 
-# Start services
-docker compose up -d
+bash
+Copiar
+Editar
 npm run dev
-Access the dashboard at: http://localhost:3000
+Open your browser and navigate to:
 
-Core Features
-Component	Description	Configuration File
-Agent Runtime	Execution environment for workflows	config/runtime.yaml
-Model Gateway	Unified interface for LLMs	config/models.ts
-Memory Engine	Vector + relational persistence	src/memory/
-Configuration
-1. Set Environment Variables
-bash
-cp .env.example .env
-# Edit with your API keys
-2. Connect AI Providers
-Edit config/providers.ts:
+arduino
+Copiar
+Editar
+http://localhost:3000
+🧩 Tech Stack
+Frontend: React + Vite
 
-typescript
-export default {
-  openai: {
-    apiKey: process.env.OPENAI_KEY,
-    defaultModel: 'gpt-4-turbo'
-  },
-  ollama: {
-    endpoint: 'http://localhost:11434',
-    defaultModel: 'llama3'
-  }
-}
-Deployment Options
-Option 1: Vercel (Frontend) + Convex (Backend)
-https://vercel.com/button
+AI Agent System: Local or cloud LLM backend (RWKV, HuggingFace, or others)
 
-Option 2: Docker Production
-bash
-docker compose -f docker-compose.prod.yml up --build
-Option 3: Bare Metal
-bash
-npm run build
-node dist/main.js
-Troubleshooting
-Logo Not Displaying?
-Ensure the logo exists at /public/logo.png
+State & Memory: Simple memory chains for NPC dialogue & history
 
-Verify the raw GitHub URL is correct:
+Deployment: Vercel / Netlify ready
 
-markdown
-![Logo](https://raw.githubusercontent.com/tu-usuario/tharsys/main/public/logo.png)
-Ollama Connection Issues
-bash
-# Test connection
-curl http://localhost:11434/api/tags
+📁 Project Structure
+plaintext
+Copiar
+Editar
+assets/         → Project logo and media
+public/         → Static files
+src/            → Core logic, agents, and UI
+README.md       → You are here
+📜 License
+MIT License — free to use, adapt, and build upon.
 
-# Set Docker-compatible host
-npx convex env set OLLAMA_HOST="http://host.docker.internal:11434"
-License
-Apache 2.0 © [Your Organization] 2024
+🤖 Attribution
+Tharsys was originally inspired by AI Town by a16z, reimagined as a standalone world and redesigned with a unique setting and purpose.
