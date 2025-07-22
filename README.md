@@ -1,76 +1,94 @@
-<p align="center">
-  <img src="assets/logo.png" width="300" alt="Tharsys Logo" />
-</p>
-
 # Tharsys
 
-**Tharsys** is a social simulation and AI-driven town set on a terraformed Mars in the distant future. Inspired by the colonization spirit of the old frontiers—but without Western symbolism—it explores the birth of a new civilization through interactive NPCs powered by AI.
+<p align="center">
+  <img src="/assets/logotharsys.png" width="300" alt="Tharsys Logo" />
+</p>
 
-## 🌍 Concept
+## Overview
 
-Welcome to **Nova Tharsys**, the first Martian colony to thrive as both an experiment in social behavior and an open-ended simulation game. New settlers arrive from Earth, building futuristic homes, vehicles, and systems, and writing the new history of humanity—one conversation at a time.
+**Tharsys** is a gamified social experiment and AI-driven simulation set on a terraformed Mars in the distant future. It is both a game and a social experiment designed to observe and study how AI-powered NPCs interact with each other and their environment. This project serves as a platform for social experiments, behavioral studies, and testing emergent social dynamics in a controlled virtual world.
 
-## 🎯 Key Features
+## Concept
+
+Welcome to **Tharsys**, the first Martian colony that acts as a living social experiment and an open-ended simulation game. Players and AI-driven NPCs co-exist in a futuristic Mars city, where NPCs have evolving personalities, memories, and social bonds powered by advanced language models. The project explores emergent storytelling, sociology, and human-AI interaction.
+
+## Key Features
 
 - 🧠 **AI-Driven NPCs**  
-  Fully autonomous agents with evolving personalities and memories powered by language models.
+  Autonomous agents with evolving personalities and memories powered by language models.
 
-- 🏙️ **Futuristic Mars City**  
-  A city built on Mars using clean, stylized visuals and futuristic architecture.
+- 🏙️ **Futuristic Mars Colony**  
+  A stylized city on Mars with futuristic architecture and immersive environments.
 
-- 🧪 **Social Experiment Meets Game**  
-  A hybrid experience that explores sociology, emergent storytelling, and player observation.
+- 🧪 **Social Experiment & Game Hybrid**  
+  Designed to study social behavior and emergent interactions among NPCs and players.
 
 - 🔁 **Real-Time Interaction**  
-  NPCs talk, make decisions, and develop social bonds 24/7, even when you're not around.
+  NPCs continuously interact, make decisions, and develop relationships 24/7.
 
-- 🔗 **Web3-Ready Architecture** *(coming soon)*  
-  Planned integration with NFTs, identity layers, and wallet interaction for ownership and persistence.
+- 🔗 **Web3 Integration (Planned)**  
+  Future support for NFTs, identity layers, and wallet interactions for ownership and persistence.
 
-## 🚀 Getting Started
+## Getting Started
 
-1. Clone this repository:
+### Prerequisites
 
-   ```bash
-   git clone https://github.com/Reaxtiv/tharsys.git
-   cd tharsys
+- Node.js (v16 or higher recommended)
+- npm (comes with Node.js)
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Reaxtiv/tharsys.git
+cd tharsys
+```
+
 Install dependencies:
 
-bash
-Copiar
-Editar
+```bash
 npm install
-Run locally:
+```
 
-bash
-Copiar
-Editar
+### Running Locally
+
+Start the development server:
+
+```bash
 npm run dev
+```
+
 Open your browser and navigate to:
 
-arduino
-Copiar
-Editar
+```
 http://localhost:3000
-🧩 Tech Stack
-Frontend: React + Vite
+```
 
-AI Agent System: Local or cloud LLM backend (RWKV, HuggingFace, or others)
+## Usage
 
-State & Memory: Simple memory chains for NPC dialogue & history
+Explore the Mars colony, interact with AI-driven NPCs, and observe their social dynamics. This project is ideal for researchers, developers, and enthusiasts interested in AI, social simulations, and emergent behavior.
 
-Deployment: Vercel / Netlify ready
+## Project Structure
 
-📁 Project Structure
-plaintext
-Copiar
-Editar
-assets/         → Project logo and media
-public/         → Static files
-src/            → Core logic, agents, and UI
-README.md       → You are here
-📜 License
+```
+assets/         → Project logos and media assets
+public/         → Static files served by the web server
+src/            → Core application logic, UI components, and AI agent code
+convex/         → Backend logic and database schema (Convex platform)
+data/           → Game data, animations, spritesheets
+fly/            → Deployment configuration for Fly.io
+README.md       → This file
+```
+
+## Contributing
+
+Contributions are welcome! Please open issues or pull requests for bug fixes, features, or improvements. This project aims to grow as a collaborative social experiment platform.
+
+## License
+
 MIT License — free to use, adapt, and build upon.
 
-🤖 Attribution
-Tharsys was originally inspired by AI Town by a16z, reimagined as a standalone world and redesigned with a unique setting and purpose.
+## Attribution
+
+Tharsys was inspired by AI Town by a16z, reimagined as a standalone world with a unique setting and purpose.
